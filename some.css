@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* border:3px solid green; */
+}
+body{
+    font-size: 20px;
+    margin:0 auto;
+    background-color: #303030;
+    color:white;
+    max-width: 1440px;
+   
+}
+.circle-in-header{
+    height:50px;
+    width:50px;
+    z-index: 0;left:-25px;
+    top:30px;
+    position: absolute;
+    background-color: #555;
+    display: inline-block;
+    border-radius: 50%;
+}
+.relative{
+    position:relative;
+}
+.container{
+    display: flex;
+    margin:5rem;
+    background-color: #222;
+}
+container>div{
+    flex:1;
+}
+header.first-half{
+    z-index: -2;
+    display: flex;
+    padding:1rem 1rem 1rem 4rem;
+    
+}
+header.first-half h2{
+    text-align: left;
+    justify-self: left;
+    z-index: 2;
+    display: inline-block;
+    flex:5;
+    font-weight: 500;
+}
+header.first-half>div{
+    flex:1;
+    display: flex;
+    padding:1rem .1rem;
+}
+.header-right-parent{
+    display: flex;
+    flex:2;
+    align-items: center;
+}
+.header-right:nth-of-type(3){
+    padding-right: 0;
+    min-width: 10ch;
+}
+.header-right{
+    padding:0 1rem;
+    color:#888;
+    font-weight: 500;
+    font-size: 1rem;
+}
+section>h1{
+    padding:3rem 2.5rem .5rem 2.5rem;
+    font-weight: bolder;
+    font-size:3rem;
+}
+div.second-half{
+    background-color: rgba(200,200,200,.1);
+}
+.text-special{
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: orange;
+    text-decoration-thickness: 8px;
+}
+section p{
+    color:#666;
+    padding:.5rem 2.5rem;
+}
+.option-buttons{
+    padding:2.5rem;
+    display: flex;
+    text-align: center;
+}
+div.start-now{
+    width:150px;
+    border-radius: 5px;
+    padding:1rem;
+    background-color: orange;
+    color:#fefefe;
+}
+div.how-works{
+    width:150px;
+    margin-left: 2rem;
+    align-self: center;
+    color:#aaa;
+}
+.avatar{
+    display: inline-block;
+    position:relative;
+    width: 2.5rem;
+    height:2.5rem;
+    border-radius: 50%;
+}
+
+.avatar:nth-of-type(1){
+    background-color: yellow;
+    left:2.5rem;
+}
+.avatar:nth-of-type(2){
+    background-color: orange;
+    left:1.25rem;
+}
+.avatar:nth-of-type(3){
+    background-color: brown;
+}
+.avatar-parent{
+    display: flex;
+    margin: 1rem 0 2rem 0rem;
+}
+.avatar-text{
+    display: inline-block;
+    align-self: center;
+    padding-left: 2rem;
+}
+.avatar-text-special{
+    font-size: larger;
+    font-weight: bold;
+}
+.avatar-text-normal{
+    color:#ccc;
+}
+.left-pad{
+    width: 50%;
+    padding-left: 3.5rem;
+}
+.people{
+    padding-bottom: 3rem;
+}
+.second-half{
+    width: 50%;
+    opacity: .5;
+}
+
+.image{
+    width: 100%;
+    position: relative;
+    min-height: 100%;
+    background-image: url('./visa.jpg');
+    /* background-repeat: ; */
+    z-index: 5;
+}
+.options-button{
+    position: absolute;
+    right:10%;
+    top:5%;
+    padding: 15px 20px;
+    background-color: white;
+    color:#000;
+    font-size: small;
+    border-radius: 5px;
+    letter-spacing: 1.25px;
+    box-shadow: 0 0 20px #eee;
+    cursor: pointer;
+    z-index: 10;
+}
